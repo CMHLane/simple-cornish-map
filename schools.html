@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_2f97b93084b39bfa718f20d72c5aa568 {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+    
+                <style>
+                    #float_image_3a628a84d1e2a9b80962500b17793d10 {
+                        position: absolute;
+                        bottom: 65%;
+                        left: 80%;
+                          scale: 0.2;
+                        }
+                </style>
+            
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet-minimap/3.6.1/Control.MiniMap.css"/>
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_2f97b93084b39bfa718f20d72c5aa568" ></div>
+        
+    
+            <img id="float_image_3a628a84d1e2a9b80962500b17793d10" alt="float_image"
+                 src="https://upload.wikimedia.org/wikipedia/commons/8/84/North_Pointer.svg"
+                 style="z-index: 999999">
+            </img>
+            
+    
+<div style="position: fixed; top: 50px; left: 50px; z-index: 9999;
+background-color: white; border:2px solid grey; border-radius:3px; padding: 10px;">
+&nbsp;<i class="fa fa-star" style="color:black"></i><span> &nbsp; Truro Hospital</span><br>
+&nbsp;<i class="fa fa-circle" style="color:red"></i><span> &nbsp; Schools</span><br>
+</div>
+</body>
+<script>
+    
+    
+            var map_2f97b93084b39bfa718f20d72c5aa568 = L.map(
+                "map_2f97b93084b39bfa718f20d72c5aa568",
+                {
+                    center: [50.15, -5.35],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_5714e53be3c1afdae29860966429c18f = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+        
+    
+            tile_layer_5714e53be3c1afdae29860966429c18f.addTo(map_2f97b93084b39bfa718f20d72c5aa568);
+        
+    
+            tile_layer_5714e53be3c1afdae29860966429c18f.addTo(map_2f97b93084b39bfa718f20d72c5aa568);
+        
+    
+            var marker_c5d511cf81dc8ed6da68a4702a065b4b = L.marker(
+                [50.2661, -5.0922],
+                {}
+            ).addTo(map_2f97b93084b39bfa718f20d72c5aa568);
+        
+    
+            var icon_3faf71a5ae7719585c679b8664f7ec90 = L.AwesomeMarkers.icon(
+                {"extraClasses": "fa-rotate-0", "icon": "star", "iconColor": "white", "markerColor": "black", "prefix": "fa"}
+            );
+            marker_c5d511cf81dc8ed6da68a4702a065b4b.setIcon(icon_3faf71a5ae7719585c679b8664f7ec90);
+        
+    
+        var popup_3d6371b832f51c68f09bb2c86a49a36a = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7b67a9fb1f175a32064bfedd0eb8c635 = $(`<div id="html_7b67a9fb1f175a32064bfedd0eb8c635" style="width: 100.0%; height: 100.0%;"><b>Truro Hospital</b></div>`)[0];
+                popup_3d6371b832f51c68f09bb2c86a49a36a.setContent(html_7b67a9fb1f175a32064bfedd0eb8c635);
+            
+        
+
+        marker_c5d511cf81dc8ed6da68a4702a065b4b.bindPopup(popup_3d6371b832f51c68f09bb2c86a49a36a)
+        ;
+
+        
+    
+    
+            var circle_b461e6532adbc7f07fcfeee459ad26b1 = L.circle(
+                [50.3694, -4.965833],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_2f97b93084b39bfa718f20d72c5aa568);
+        
+    
+            var marker_81880414191072a23e49b5065b14f07a = L.marker(
+                [50.3694, -4.965833],
+                {}
+            ).addTo(map_2f97b93084b39bfa718f20d72c5aa568);
+        
+    
+            var div_icon_418037595f83293b70b521332427206c = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black;\"\u003eSummer Court School \u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [600, 200]});
+            marker_81880414191072a23e49b5065b14f07a.setIcon(div_icon_418037595f83293b70b521332427206c);
+        
+    
+            var circle_995a44dd110eb7fff1ff61df255af275 = L.circle(
+                [50.2294, 5.228333],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_2f97b93084b39bfa718f20d72c5aa568);
+        
+    
+            var marker_466c5c8be8fc8abde232d7e8a9692251 = L.marker(
+                [50.2294, 5.228333],
+                {}
+            ).addTo(map_2f97b93084b39bfa718f20d72c5aa568);
+        
+    
+            var div_icon_7c5ee1bba16673529a11706bfbf5f4f9 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black;\"\u003eTrewirgie School\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [600, 200]});
+            marker_466c5c8be8fc8abde232d7e8a9692251.setIcon(div_icon_7c5ee1bba16673529a11706bfbf5f4f9);
+        
+    
+            var circle_367b034d939e7d40b6225dce6737c271 = L.circle(
+                [50.12, -5.5475],
+                {"bubblingMouseEvents": true, "color": "crimson", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "crimson", "fillOpacity": 0.6, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 1000, "stroke": true, "weight": 3}
+            ).addTo(map_2f97b93084b39bfa718f20d72c5aa568);
+        
+    
+            var marker_0a655a53441c27d0a5c7110590af6926 = L.marker(
+                [50.12, -5.5475],
+                {}
+            ).addTo(map_2f97b93084b39bfa718f20d72c5aa568);
+        
+    
+            var div_icon_4f2b07464b53130de832d39b7f2f2c79 = L.divIcon({"className": "empty", "html": "\u003cdiv style=\"font-size: 12px; color: black;\"\u003eBolitho School\u003c/div\u003e", "iconAnchor": [0, 0], "iconSize": [600, 200]});
+            marker_0a655a53441c27d0a5c7110590af6926.setIcon(div_icon_4f2b07464b53130de832d39b7f2f2c79);
+        
+    
+            tile_layer_5714e53be3c1afdae29860966429c18f.addTo(map_2f97b93084b39bfa718f20d72c5aa568);
+        
+    
+            tile_layer_5714e53be3c1afdae29860966429c18f.addTo(map_2f97b93084b39bfa718f20d72c5aa568);
+        
+    
+            var tile_layer_9827334cb24f53f32c609dd46c0cdd7a = L.tileLayer(
+                "https://tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "\u0026copy; \u003ca href=\"https://www.openstreetmap.org/copyright\"\u003eOpenStreetMap\u003c/a\u003e contributors", "detectRetina": false, "maxNativeZoom": 19, "maxZoom": 19, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            );
+            var mini_map_c5ef60ae47f2a70977ba05b799719580 = new L.Control.MiniMap(
+                tile_layer_9827334cb24f53f32c609dd46c0cdd7a,
+                {"autoToggleDisplay": false, "centerFixed": false, "collapsedHeight": 25, "collapsedWidth": 25, "height": 150, "minimized": false, "position": "bottomright", "toggleDisplay": false, "width": 150, "zoomAnimation": false, "zoomLevelOffset": -7}
+            );
+            map_2f97b93084b39bfa718f20d72c5aa568.addControl(mini_map_c5ef60ae47f2a70977ba05b799719580);
+        
+    
+            tile_layer_5714e53be3c1afdae29860966429c18f.addTo(map_2f97b93084b39bfa718f20d72c5aa568);
+        
+</script>
+</html>
