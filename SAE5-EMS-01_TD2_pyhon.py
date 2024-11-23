@@ -268,7 +268,7 @@ webbrowser.open(S_out)
 # Flèche nord
 north_arrow_url ='https://upload.wikimedia.org/wikipedia/commons/8/84/North_Pointer.svg'
 # Add the north arrow image to the map
-FloatImage(north_arrow_url,bottom=65, left=75,scale=0.2).add_to(zone_map)
+FloatImage(north_arrow_url,bottom=65, left=80,scale=0.2).add_to(zone_map)
 
 zone_map.save(S_out)
 webbrowser.open(S_out)
