@@ -1,6 +1,6 @@
-# SAE 5 EMS 01 Mener une étude statistique
+# Simple Map of Cornwall
 
-Simple-Map-Website
+simple-cornish-map
 
 This repository contains code and files for publishing a Folium map as a very simple GitHub Pages site.
 
